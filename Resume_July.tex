@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape KUMAR GAURAV} \\ \vspace{1pt}
+    \small +91-9910768038 $|$ \href{mailto:kumargaura009@gmail.com}{\underline{kumargaura009@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/kumargaurav09}{\underline{linkedin-kumargaurav09}} $|$
+    \href{https://github.com/K09Gaurav}{\underline{github-K09Gaurav}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+    {Kalinga Institute of Industrial Technology (KIIT)}{Bhubaneswar, Odisha}
+    {Bachelor of Technology in Computer Science and Engineering; CGPA: 8.07/10}{Aug 2021 -- May 2025}
+  \resumeSubheading
+    {Navyug Convent School (CBSE)}{New Delhi, India}
+    {Senior Secondary (XII); Percentage: 74\%}{Apr 2019 -- May 2021}
+  \resumeSubheading
+    {DAV Public School (CBSE)}{Gurugram, India}
+    {Secondary (X); Percentage: 89\%}{Apr 2017 -- Mar 2019}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Graduate Trainee Engineer – Java Track}{Feb 2025 -- Present}
+      {KPIT Technologies (Remote)}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Developing backend modules using Hibernate ORM integrated with PostgreSQL for object-relational mapping}
+        \resumeItem{Building Java-based web applications using Spring Boot and Maven following layered MVC architecture}
+        \resumeItem{Practicing frontend development with HTML, CSS, and JavaScript for responsive UI integration}
+        \resumeItem{Working on mock projects simulating enterprise-grade REST APIs and database-driven business logic}
+      \resumeItemListEnd
+
+
+\resumeSubheading
+  {Data Engineering Intern}{June 2024 -- Aug 2024}
+  {Celebal Technologies (Remote)}{Jaipur, India}
+  \resumeItemListStart
+    \resumeItem{Designed and deployed automated ETL pipelines in Azure Data Factory for ingesting MySQL data into Azure Data Lake Storage (ADLS)}
+    \resumeItem{Implemented conditional branching using child pipelines and triggers to handle dynamic data routing scenarios}
+    \resumeItem{Configured and deployed Self-hosted Integration Runtime (SHIR) to securely enable on-premise to cloud data flow}
+    \resumeItem{Resolved SQL Server compatibility issues during schema migrations and maintained seamless ADF workflows}
+  \resumeItemListEnd
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{DriveTrack – Monitoring Dashboard} $|$ \emph{Java, Spring Boot, Hibernate, PostgreSQL, Chart.js}}{Nov 2024 -- Jan 2025}
+          \resumeItemListStart
+            \resumeItem{Designed a full-stack dashboard to monitor vehicle performance metrics like fuel efficiency and engine temperature}
+            \resumeItem{Developed RESTful APIs using Spring Boot; implemented data persistence with Hibernate ORM and PostgreSQL}
+            \resumeItem{Visualized real-time trends using Chart.js for dynamic frontend insights and diagnostics}
+            \resumeItem{Engineered a modular MVC-based architecture for scalable deployment using Maven}
+          \resumeItemListEnd
+
+        
+        \resumeProjectHeading
+          {\textbf{Real-Time Emotion Detection System} $|$ \emph{Python, OpenCV, MediaPipe, scikit-learn}}{Sept 2024 -- Oct 2024}
+          \resumeItemListStart
+            \resumeItem{Collected and labeled 1,200+ facial landmark images using MediaPipe and webcam capture}
+            \resumeItem{Trained SVM and Random Forest classifiers via scikit-learn pipelines, achieving ~85\% accuracy}
+            \resumeItem{Developed a real-time video processing system using OpenCV to overlay emotion predictions live}
+            \resumeItem{Built an end-to-end pipeline from dataset creation to model deployment in a desktop application}
+          \resumeItemListEnd
+
+        
+        \resumeProjectHeading
+          {\textbf{Azure Data Pipeline Automation} $|$ \emph{Azure Data Factory, MySQL, SQL Server, ADLS}}{June 2024 -- Aug 2024}
+          \resumeItemListStart
+            \resumeItem{Built ETL pipelines in Azure Data Factory to move data from MySQL to Azure Data Lake and SQL Server}
+            \resumeItem{Used trigger-based execution and child pipelines for conditional data routing}
+            \resumeItem{Configured Self-hosted Integration Runtime (SHIR) for secure on-prem to cloud integration}
+            \resumeItem{Resolved SQL Server version conflicts using schema mapping and custom flows}
+          \resumeItemListEnd
+        
+        
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Java, Python, SQL, JavaScript, HTML/CSS} \\
+    \textbf{Frameworks \& Tools}{: Spring Boot, Hibernate, Maven} \\
+    \textbf{Databases}{: PostgreSQL, MySQL, SQL Server} \\
+    \textbf{Cloud \& Data Tools}{: Azure Data Factory, Git, Jupyter Notebook}\\
+    \textbf{Libraries}{: scikit-learn, OpenCV, MediaPipe, pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
